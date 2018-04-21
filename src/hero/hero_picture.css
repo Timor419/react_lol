@@ -1,0 +1,7 @@
+.hero_picture {
+    width: 4rem;
+    height: 4rem;
+    background-color: orange;
+    margin-right: 1rem;
+    border-radius: 0.5rem;
+}
