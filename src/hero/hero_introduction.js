@@ -6,7 +6,7 @@ class HeroIntroduction extends Component {
     render() {
         return (
             <span className={"hero_introduction"}>
-                <HeroName/>
+                <HeroName name={"迅捷斥候"}/>
                 <Introduction/>
             </span>
         );

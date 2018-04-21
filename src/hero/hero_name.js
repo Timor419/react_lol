@@ -6,6 +6,7 @@ class HeroName extends Component {
         return(
             <div className={"hero_name"}>
                 提莫
+                {this.props.name}
             </div>
         );
     }
