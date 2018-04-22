@@ -6,10 +6,12 @@ export default class HeroItem extends Component {
         let hero = this.props.hero;
         return (
             <div className={'cp_hero_item'}>
-                <div className={'title'}>{this.props.title}</div>
-                <div>{hero.name}</div>
-                <div>{hero.nickname}</div>
-                <img src={hero.avatar}/>
+                {/*<div className={'title'}>{this.props.title}</div>*/}
+                <img className={"hero_avatar"} src={hero.avatar}/>
+                <div className={"hero_name"}>
+                    <div className={"nickname"}>{hero.nickname}</div>
+                    <div>({hero.name})</div>
+                </div>
                 <p>{hero.story}</p>
             </div>
         );

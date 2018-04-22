@@ -1,7 +1,27 @@
 .cp_hero_item {
-    margin-top: 30px;
+    height: 6rem;
+    border-bottom: 1px solid #c1c1c1;
+    margin: 0 1rem ;
+    display: flex;
+    align-items: center;
 }
 
 .cp_hero_item .title {
     font-size: large;
+}
+
+.cp_hero_item .hero_avatar {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+}
+
+.cp_hero_item .hero_name {
+    width: 50%;
+    font-size: 18px;
+    margin-left: 1.5rem;
+}
+
+.hero_name .nickname {
+    margin-right: 1rem;
 }

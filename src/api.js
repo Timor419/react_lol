@@ -1,15 +1,17 @@
+import Fetch from "./fetch";
+
 export function findAllHeroes() {
-    return fetch("http://mac:8080/hero/findAll")
+    return fetch("http://windows:8080/hero/findAll")
         .then(response => response.json())
-        .then(json => json.list)
-        .then(list => list[1]);
+        .then(json => json.data)
+        .then(data => data[1]);
 }
 
-export function getListHeroes() {
-    return fetch("http://mac:8080/hero/getList")
+export function getListHeroes(page, pageSize) {
+    return fetch(`http://windows:8080/hero/getList?page=${page}&pageSize=${pageSize}`)
         .then(response => response.json())
-        .then(result => result.data)
-        .then(data => data.list)
-        .then(list => list[0])
+        .then(json => json.data)
         ;
 }
+
+
